@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/main.css">
     <title>HM Building</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <nav class="header__nav">
             <a href="index.html"><img src="./media/logo.png" alt="Logo Firmy"></a>
-            <ul>
-                <li><a href="index.html">DOMŮ</a></li>
+            <menu class="menu hamburger-menu-hidden">
+                <li><a href="index.html" class="active">DOMŮ</a></li>
                 <li><a href="services.html">SLUŽBY</a></li>
                 <li><a href="references.html">REFERENCE</a></li>
                 <li><a href="about_us.html">O NÁS</a></li>
                 <li><a href="contact.html">KONTAKT</a></li>
-            </ul>
+            </menu>
+            <a class="hamburger" href="javascript:void(0)">menu</a>
         </nav>
     </header>
     <main>
-        <div>
-            <h1>HM Building.cz s.r.o.</h1>
-            <h2>liberecká stavební společnost</h2>
-            <button><a href="#services">pokračovat</a></button>
+        <div >
+            <h1>HM Building.cz s.r.o.
+            <span>liberecká stavební společnost</span></h1>
+            <a href="#services">pokračovat</a>
         </div>
         <div id="services">
             <h3>Využijte škálu našich služeb</h3>
