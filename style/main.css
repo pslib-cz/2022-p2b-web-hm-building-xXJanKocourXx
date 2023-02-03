@@ -121,30 +121,69 @@ menu::after {
         border: 2px;
         color: #eb6c27;
         border-style: dashed;
-        padding: 5px;
+        padding: 7.5px;
         text-decoration: none;
     }
     .services{
-        max-width: 50%;
+        max-width: 60%;
         margin: 20px;
     }
     .novostavby{
-        max-width: 50%;
+        max-width: 60%;
         margin: 20px;
     }
     .prumyslove{
-        max-width: 50%;
+        max-width: 60%;
         margin: 20px;
     }
     .rekonstrukce{
-        max-width: 50%;
+        max-width: 60%;
         margin: 20px;
     }
     .komunikace{
+        max-width: 60%;
+        margin: 20px;
+    }
+    .reference{
+        max-width: 60%;
+        margin: 20px;
+    }
+    .presvedceni{
+        max-width: 60%;
+        margin: 20px;
+    }
+    .footer{
+        max-width: 80%;
+        margin-top: 25px;
+        background-color: #EB6C27;
+        text-decoration: none;
+        display: grid;
+        justify-items: center;
+    }
+    .contact_button{
+        padding: 10px;
+        margin: 5px;
+        background-color: white;
+        text-align: center;
+        text-decoration: none;
+        color: #EB6C27;
+        font-weight: 600;
+    }
+    .ukazky{
         max-width: 50%;
         margin: 20px;
     }
-
+    .button_reference{
+        border: #EB6C27;
+        background-color: #EB6C27;
+        padding: 5px;
+        text-decoration: none;
+        color: white;
+    }
+    .main{
+        display: grid;
+        justify-items: center;
+    }
 
 @media (max-width: 1980px){
 
