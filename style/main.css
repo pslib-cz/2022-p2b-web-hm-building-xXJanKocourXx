@@ -8,6 +8,18 @@ html{
     background-color: white;
 }
 
+.img--responsive{
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
 
 .header__nav{
     position: relative;
@@ -71,22 +83,22 @@ menu::after {
 .hamburger::after {
     content: url(../media/hamburger.svg);
 }
-
-
-@media screen and (max-width: 832px) {
-    .hamburger { 
-        display: flex;
-    } 
-    .hamburger-menu--hidden {
-        z-index: -1;
-    }
+.hamburger { 
+    display: flex;
+} 
+.hamburger-menu--hidden {
+    z-index: -1;
+}
+.cta__button{
+    border: #EB6C27;
+    background-color: #EB6C27;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
 }
 
-    .img--responsive {
-        width: 320px;
-        height: 200px;
-    }
-
+@media screen and (max-width: 832px) {
+}
     .title{
     display: flex;
     justify-content: center;
@@ -94,9 +106,9 @@ menu::after {
     align-items: center;
     padding-top:179px;
     padding-bottom:20px;
-    background-image:url(./media/pageheader-1920w.jpg);
+    background-image:url(../media/pageheader-1920w.jpg);
     background-position: center;
-    background-size:auto 150%;
+    background-size:cover;
     background-repeat: no-repeat;
     margin-bottom: 55px;
     }
@@ -108,61 +120,35 @@ menu::after {
         height: 100%;
     }
     .img--responsive--right{
-        width: 320px;
-        height: 134px;
         border-bottom-right-radius: 40px;
     }
     .img--responsive--left{
-        width: 320px;
-        height: 134px;
         border-bottom-left-radius: 20px;
     }
+
     .button--lined{
         border: 2px;
         color: #eb6c27;
         border-style: dashed;
-        padding: 7.5px;
+        padding: 5px;
         text-decoration: none;
     }
     .services{
-        max-width: 60%;
-        margin: 20px;
-    }
-    .novostavby{
-        max-width: 60%;
-        margin: 20px;
-    }
-    .prumyslove{
-        max-width: 60%;
-        margin: 20px;
-    }
-    .rekonstrukce{
-        max-width: 60%;
-        margin: 20px;
-    }
-    .komunikace{
-        max-width: 60%;
-        margin: 20px;
-    }
-    .reference{
-        max-width: 60%;
-        margin: 20px;
-    }
-    .presvedceni{
-        max-width: 60%;
-        margin: 20px;
+        /*max-width: 100%;
+        margin: 2em;*/
+        margin-bottom: 2em;
     }
     .footer{
-        max-width: 80%;
+        max-width: 100%;
         margin-top: 25px;
+        padding: 2em;
         background-color: #EB6C27;
         text-decoration: none;
-        display: grid;
-        justify-items: center;
+        color: white;
     }
     .contact_button{
         padding: 10px;
-        margin: 5px;
+        margin: 25%;
         background-color: white;
         text-align: center;
         text-decoration: none;
@@ -170,8 +156,10 @@ menu::after {
         font-weight: 600;
     }
     .ukazky{
-        max-width: 50%;
-        margin: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: center;
     }
     .button_reference{
         border: #EB6C27;
@@ -179,8 +167,16 @@ menu::after {
         padding: 5px;
         text-decoration: none;
         color: white;
-    }
 
+    }
+    main{
+        max-width: 100%;
+        margin: 2em;
+    }
+    .button__center{
+        display: flex;
+        justify-content: center;
+    }
 @media (max-width: 1980px){
 
 }
